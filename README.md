@@ -41,17 +41,14 @@ BukuAdaReact/
 
 ## Cara Menjalankan
 
-### 1. Setup Database
-Import `database/Perpus.sql` di MySQL Workbench.
-
-### 2. Jalankan Backend
+### 1. Jalankan Backend
 ```bash
 cd backend
 npm install
 node src/server.js
 ```
 
-### 3. Jalankan Frontend
+### 2. Jalankan Frontend
 ```bash
 cd frontend
 npm install
