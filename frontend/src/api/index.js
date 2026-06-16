@@ -1,7 +1,7 @@
 // api/index.js — semua request ke backend terpusat di sini
 // Disesuaikan dengan routing backend: /api/peminjaman/...
 
-const BASE_URL = 'http://76.13.23.214:5000/api'
+const BASE_URL = 'http://127.0.0.1:3000/api'
 
 async function request(url, options = {}) {
   const res  = await fetch(BASE_URL + url, {

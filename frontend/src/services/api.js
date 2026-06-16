@@ -1,5 +1,5 @@
 // services/api.js — semua request ke backend ada di sini
-const BASE_URL = 'http://76.13.23.214:5000/api';
+const BASE_URL = 'http://127.0.0.1:3000/api';
 
 const post = (url, data) =>
     fetch(url, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data) }).then(r => r.json());
