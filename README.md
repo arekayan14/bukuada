@@ -36,7 +36,7 @@ BukuAdaReact/
 │       └── server.js          ← Entry point
 │
 └── database/
-    └── Perpus.sql
+    └── buku_ada_db.sql
 ```
 
 ## Cara Menjalankan
