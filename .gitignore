@@ -1,0 +1,5 @@
+# Mengabaikan file konfigurasi lokal (password database)
+.env
+
+# Mengabaikan folder library Node.js
+node_modules/

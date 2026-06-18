@@ -13,11 +13,16 @@ export default function KartuBuku({ buku, modeAdmin, dipinjamUser, diKeranjang, 
       {/* Bagian Gambar */}
       <div className="relative">
         <img
-          src={buku.gambar}
-          className="w-full h-56 object-cover"
-          onError={e => { e.target.src = 'https://via.placeholder.com/160x224?text=No+Cover' }}
-          alt={buku.judul}
-        />
+            src={buku.gambar}
+            className="w-full h-56 object-cover"
+            alt={buku.judul}
+            onError={(e) => { 
+              // Mencegah looping infinite jika fallback ini juga gagal dimuat
+              e.target.onerror = null; 
+              // Mengganti via.placeholder.com dengan placehold.co yang aktif, aman, dan dinamis mengikuti judul buku
+              e.target.src = `https://placehold.co/400x600/2563eb/ffffff?text=${encodeURIComponent(buku.judul)}`; 
+            }}
+          />
         <div className="absolute top-2 right-2">
           <span className={`text-[9px] font-bold px-2 py-0.5 rounded-full border shadow-sm ${warna}`}>
             {label}

@@ -80,3 +80,8 @@ CREATE TABLE `peminjaman` (
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+INSERT INTO `buku` (`judul`, `rak`, `gambar`, `stok`, `dipinjam`) VALUES
+('Belajar Node.js dan Express untuk Pemula', 'Rak A-1', 'https://cdn.mentorcruise.com/cdn-cgi/image/width=240,format=auto,trim=border/https://cdn.mentorcruise.com/cover-beginning-nodejs-express-mongodb-development.jpg', 5, 0),
+('Prinsip Dasar UI/UX Design dengan Figma', 'Rak D-1', 'https://cdn.gramedia.com/uploads/products/navu95n-xh.jpg', 3, 0),
+('Atomic Habits', 'Rak B-7', 'https://cdn.gramedia.com/uploads/items/9786020633176_.Atomic_Habit.jpg', 2, 0);
